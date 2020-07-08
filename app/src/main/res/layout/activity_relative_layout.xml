@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout">
+
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutImageE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/anh4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutImageE"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonLearn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="LEARN" />
+
+            <Button
+                android:id="@+id/buttonPractice"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonLearn"
+                android:text="PRACTICE" />
+
+            <Button
+                android:id="@+id/buttonTest"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonPractice"
+                android:text="TEST" />
+            <Button
+                android:id="@+id/btnchuyen"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonTest"
+                android:text="Chuyển" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iconSetting1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/anh2" />
+
+            <ImageView
+                android:id="@+id/iconSetting2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iconSetting1"
+                android:src="@drawable/anh1" />
+
+            <ImageView
+                android:id="@+id/iconSetting3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/iconSetting2"
+                android:src="@drawable/anh3" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
